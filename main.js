@@ -62,4 +62,16 @@ scrollReveal.reveal(
     #services header, #services .card,
     #testimonials header, #testimonials .testimonial
     #contact .text, #contact .links
+    footer .brand, footer .social
     `, { interval: 100 })
+
+// Botton up to home
+
+const backToTopBotton = document.querySelector('.back-to-top')
+window.addEventListener('scroll', function(){
+    if (this.window.scrollY >= 560) {
+        backToTopBotton.classList.add('show');
+    } else {
+        backToTopBotton.classList.remove('show');
+    }
+})
