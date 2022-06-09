@@ -46,3 +46,20 @@ const swiper = new Swiper('.swiper', {
         enable: true,
     }
 })
+
+// Scroll Reveal
+
+const scrollReveal = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 700,
+    reset: true
+})
+
+scrollReveal.reveal(
+    `#home .image, #home .text,
+    #about .image, #about .text,
+    #services header, #services .card,
+    #testimonials header, #testimonials .testimonial
+    #contact .text, #contact .links
+    `, { interval: 100 })
