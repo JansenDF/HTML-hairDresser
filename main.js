@@ -31,3 +31,18 @@ window.addEventListener('scroll', function () {
         header.classList.remove('scroll')
     }
 })
+
+// Carousel testimonials swiper
+
+const swiper = new Swiper('.swiper', {
+    slidesPerView: 1,
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    mousewheel: {
+        invert: true,
+    },
+    keyboard: {
+        enable: true,
+    }
+})
